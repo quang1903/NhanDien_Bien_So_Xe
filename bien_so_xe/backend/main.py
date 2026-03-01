@@ -192,6 +192,9 @@ def delete_record(id: int, db: Session = Depends(get_db)):
 # ========== SINH VIÊN ==========
 @app.post("/api/student")
 def add_student(data: dict, db: Session = Depends(get_db)):
+    existing = db.query(Student).filter(Student.mssv == data.get("mssv")).first()
+    if existing:
+        return JSONResponse(status_code=400, content={"message": "MSSV đã tồn tại!"})
     student = Student(**data)
     db.add(student)
     db.commit()
