@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['plate']
+
+roboflow:
+  workspace: quangs-workspace-lsjie
+  project: vietnam-license-plate-h8t3n-f7jj0
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/quangs-workspace-lsjie/vietnam-license-plate-h8t3n-f7jj0/dataset/1
