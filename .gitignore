@@ -1,0 +1,28 @@
+# Virtual environment
+venv/
+
+# Model weights (nặng)
+*.pt
+*.pth
+
+# Dataset (nặng)
+dataset/
+
+# Database
+*.db
+
+# Cache
+__pycache__/
+*.pyc
+.env
+
+# Runs (kết quả train)
+runs/
+
+# ngrok
+ngrok.exe
+*.zip
+
+# OS
+.DS_Store
+Thumbs.db
