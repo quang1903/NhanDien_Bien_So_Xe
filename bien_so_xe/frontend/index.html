@@ -62,12 +62,14 @@
                     </select>
                 </div>
 
-                <video id="video" autoplay style="width:100%; border-radius:8px; display:none;"></video>
+                <video id="video" autoplay playsinline muted style="width:100%; border-radius:8px; display:none;"></video>
                 <canvas id="canvas" hidden></canvas>
                 <img id="camera-result" style="width:100%; border-radius:8px; display:none;">
                 <div style="margin-top:10px; display:flex; gap:10px;">
                     <button class="btn-green" onclick="startCamera()">▶ Bật camera</button>
                     <button class="btn-red" onclick="stopCamera()">⏹ Tắt</button>
+                    <button id="btn-capture" class="btn-primary" onclick="capturePhoto()" 
+                        style="display:none;">📸 Chụp</button>
                 </div>
             </div>
             <div class="card">
